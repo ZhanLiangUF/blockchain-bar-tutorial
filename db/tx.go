@@ -13,7 +13,7 @@ type Tx struct {
 	Data  string  `json:"data"`
 }
 
-func NewTx(from Account, to Account, value uint, data string) {
+func NewTx(from Account, to Account, value uint, data string) Tx {
 	return Tx{from, to, value, data}
 }
 
